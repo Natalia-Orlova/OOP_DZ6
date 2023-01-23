@@ -17,4 +17,10 @@ public class ImmutableList<T> extends AbstractList<T> {
     public T get(int index) {
         return super.get(index);
     }
+
+    @Override
+    public String toString() {
+        return "ImmutableList[" + getList() + "]";
+    }
+
 }
